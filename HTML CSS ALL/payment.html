@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Payment Form</h2>
+        <form action="" method="post">
+            <!--Account Information Start-->
+            <h4>Account</h4>
+            <div class="input_grp">
+                <div class="input_box">
+                    <input type="text" placeholder="Full Name" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input_box">
+                    <input type="text" placeholder="Name on Card" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input_grp">
+                <div class="input_box">
+                    <input type="email" placeholder="Email Address" required class="name">
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input_grp">
+                <div class="input_box">
+                    <input type="text" placeholder="Address" required class="name">
+                    <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="input_grp">
+                <div class="input_box">
+                    <input type="text" placeholder="City" required class="name">
+                    <i class="fa fa-institution icon"></i>
+                </div>
+            </div>
+            <!--Account Information End-->
+
+
+            <!--DOB & Gender Start-->
+            <div class="input_grp">
+                <div class="input_box">
+                    <h4>Date Of Birth</h4>
+                    <input type="date" name="dob" id="dob" class="dob" placeholder="dob" required>
+                </div>
+                <div class="input_box">
+                    <h4>Gender</h4>
+                    <input type="radio" name="gender" class="radio" id="b1" checked>
+                    <label for="b1">Male</label>
+                    <input type="radio" name="gender" class="radio" id="b2">
+                    <label for="b2">Female</label>
+                </div>
+            </div>
+            <!--DOB & Gender End-->
+
+
+            <!--Payment Details Start-->
+            <div class="input_grp">
+                <div class="input_box">
+                    <h4>Payment Details</h4>
+                    <select name="card_type" id="card_type" class="card" required>
+                        <option value="">--Select a Card Type--</option>
+                        <option value="visa">Visa</option>
+                        <option value="rupay">Rupay</option>
+                        <option value="mastercard">MasterCard</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_grp">
+                <div class="input_box">
+                    <input type="tel" name="" class="name" placeholder="Card Number" required>
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="input_grp">
+                <div class="input_box">
+                    <input type="tel" name="cvv" class="name" placeholder="CVV" required maxlength="3">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input_grp">
+                <div class="input_box">
+                    <div class="input_box">
+                        <label for="exp" class="exp">Exp Date :</label><br/>
+                        <input type="month" name="exp" id="exp" class="name" required>
+                        <i class="fa fa-calendar icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="input_box">
+                <input type="number" placeholder="Enter Amount" required class="name">
+                <i class="fa fa-money icon" aria-hidden="true"></i>
+            </div>
+            <!--Payment Details End-->
+
+            <div class="input_grp">
+                <div class="input_box">
+                    <button type="submit">PAY NOW</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
